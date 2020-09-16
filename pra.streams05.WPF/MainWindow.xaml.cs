@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using pra.streams05.LIB;
+
+using System.Net;
+using Newtonsoft.Json;
+
+namespace pra.streams05.WPF
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void btnPresidenten_Click(object sender, RoutedEventArgs e)
+        {
+            // https://mysafeinfo.com/api/data?list=presidents&format=jsonp
+
+            var inhoud = new WebClient().DownloadString("https://mysafeinfo.com/api/data?list=presidents&format=json");
+            List<Presidents> presidenten = new List<Presidents>();
+            presidenten = JsonConvert.DeserializeObject<List<Presidents>>(inhoud);
+            dgrPresident.ItemsSource = presidenten;
+
+        }
+
+        private void btnPostcodes_Click(object sender, RoutedEventArgs e)
+        {
+            List<PostalCodes> postalCodes = new List<PostalCodes>();
+            var json = new WebClient().DownloadString("https://raw.githubusercontent.com/jief/zipcode-belgium/master/zipcode-belgium.json");
+            postalCodes = JsonConvert.DeserializeObject<List<PostalCodes>>(json);
+            dgrPost.ItemsSource = postalCodes;
+        }
+    }
+}
