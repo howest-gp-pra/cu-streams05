@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using pra.streams05.LIB;
+using pra.streams05.CORE;
 
 using System.Net;
 using Newtonsoft.Json;
