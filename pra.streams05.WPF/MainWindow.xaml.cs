@@ -42,7 +42,7 @@ namespace pra.streams05.WPF
 
         private void btnPostcodes_Click(object sender, RoutedEventArgs e)
         {
-            List<PostalCode> postalCodes; ;
+            List<PostalCode> postalCodes;
             var json = new WebClient().DownloadString("https://raw.githubusercontent.com/jief/zipcode-belgium/master/zipcode-belgium.json");
             postalCodes = JsonConvert.DeserializeObject<List<PostalCode>>(json);
             dgrPost.ItemsSource = postalCodes;
