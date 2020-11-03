@@ -4,7 +4,7 @@ using System.Text;
 
 namespace pra.streams05.CORE
 {
-    public class Presidents
+    public class PresidentInfo
     {
         public int ID { get; set; }
         public int President { get; set; }

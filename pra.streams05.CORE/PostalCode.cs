@@ -4,7 +4,7 @@ using System.Text;
 
 namespace pra.streams05.CORE
 {
-    public class PostalCodes
+    public class PostalCode
     {
         public string zip { get; set; }
         public string city { get; set; }
