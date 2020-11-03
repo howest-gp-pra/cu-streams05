@@ -34,7 +34,7 @@ namespace pra.streams05.WPF
             // https://mysafeinfo.com/api/data?list=presidents&format=jsonp
 
             var inhoud = new WebClient().DownloadString("https://mysafeinfo.com/api/data?list=presidents&format=json");
-            List<PresidentInfo> presidenten = new List<PresidentInfo>();
+            List<PresidentInfo> presidenten;
             presidenten = JsonConvert.DeserializeObject<List<PresidentInfo>>(inhoud);
             dgrPresident.ItemsSource = presidenten;
 
@@ -42,7 +42,7 @@ namespace pra.streams05.WPF
 
         private void btnPostcodes_Click(object sender, RoutedEventArgs e)
         {
-            List<PostalCode> postalCodes = new List<PostalCode>();
+            List<PostalCode> postalCodes; ;
             var json = new WebClient().DownloadString("https://raw.githubusercontent.com/jief/zipcode-belgium/master/zipcode-belgium.json");
             postalCodes = JsonConvert.DeserializeObject<List<PostalCode>>(json);
             dgrPost.ItemsSource = postalCodes;
