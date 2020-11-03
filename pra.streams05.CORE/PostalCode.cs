@@ -6,9 +6,9 @@ namespace pra.streams05.CORE
 {
     public class PostalCode
     {
-        public string zip { get; set; }
-        public string city { get; set; }
-        public double lng { get; set; }
-        public double lat { get; set; }
+        public string Zip { get; set; }
+        public string City { get; set; }
+        public double Lng { get; set; }
+        public double Lat { get; set; }
     }
 }
