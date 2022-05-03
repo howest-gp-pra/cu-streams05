@@ -29,10 +29,9 @@ namespace Pra.Streams05.Wpf
             InitializeComponent();
         }
 
-        private void btnPresidenten_Click(object sender, RoutedEventArgs e)
+        private void BtnPresidenten_Click(object sender, RoutedEventArgs e)
         {
             // https://mysafeinfo.com/api/data?list=presidents&format=jsonp
-
             var inhoud = new WebClient().DownloadString("https://mysafeinfo.com/api/data?list=presidents&format=json");
             List<PresidentInfo> presidenten;
             presidenten = JsonConvert.DeserializeObject<List<PresidentInfo>>(inhoud);
@@ -40,7 +39,7 @@ namespace Pra.Streams05.Wpf
 
         }
 
-        private void btnPostcodes_Click(object sender, RoutedEventArgs e)
+        private void BtnPostcodes_Click(object sender, RoutedEventArgs e)
         {
             List<PostalCode> postalCodes;
             var json = new WebClient().DownloadString("https://raw.githubusercontent.com/jief/zipcode-belgium/master/zipcode-belgium.json");
