@@ -6,8 +6,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnPresidenten" Content="Haal presidenten op" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top" Width="309" Height="57" Click="BtnPresidenten_Click"/>
-        <Button x:Name="btnPostcodes" Content="Belgische postcodes" HorizontalAlignment="Left" Height="57" Margin="369,10,0,0" VerticalAlignment="Top" Width="309" Click="BtnPostcodes_Click"/>
+        <Button x:Name="btnPresidents" Content="Haal presidenten op" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top" Width="309" Height="57" Click="BtnPresidents_Click"/>
+        <Button x:Name="btnPostalCodes" Content="Belgische postcodes" HorizontalAlignment="Left" Height="57" Margin="369,10,0,0" VerticalAlignment="Top" Width="309" Click="BtnPostalCodes_Click"/>
         <DataGrid x:Name="dgrPost" HorizontalAlignment="Left" Height="301" Margin="369,90,0,0" VerticalAlignment="Top" Width="309"/>
         <DataGrid x:Name="dgrPresident" HorizontalAlignment="Left" Height="301" Margin="33,90,0,0" VerticalAlignment="Top" Width="309"/>
 
