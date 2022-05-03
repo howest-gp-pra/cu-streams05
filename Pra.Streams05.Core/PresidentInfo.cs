@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace pra.streams05.CORE
+namespace Pra.Streams05.Core
 {
     public class PresidentInfo
     {

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\pra.streams05.CORE\pra.streams05.CORE.csproj" />
+    <ProjectReference Include="..\Pra.Streams05.Core\Pra.Streams05.Core.csproj" />
   </ItemGroup>
 
 </Project>

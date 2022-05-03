@@ -12,12 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using pra.streams05.CORE;
+using Pra.Streams05.Core;
 
 using System.Net;
 using Newtonsoft.Json;
 
-namespace pra.streams05.WPF
+namespace Pra.Streams05.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
