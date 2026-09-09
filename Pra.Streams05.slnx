@@ -1,4 +1,4 @@
 <Solution>
   <Project Path="Pra.Streams05.Core/Pra.Streams05.Core.csproj" />
-  <Project Path="Pra.Streams05.Wpf/Pra.Streams05.Wpf.csproj" />
+  <Project Path="Pra.Streams05.Wpf/Pra.Streams05.Wpf.csproj" DefaultStartup="true" />
 </Solution>
